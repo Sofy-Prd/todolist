@@ -1,0 +1,161 @@
+
+body {
+  font-family: 'Baloo Bhaina 2', cursive;
+  background: url("/images/papier.jpg") no-repeat;
+  background-size: cover;
+}
+.title {
+  margin-top:2em;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+}
+h1 {
+  text-align:center;
+  color:#415A6B;
+ }
+
+.title img {
+  display:block;
+  width:20%;
+  margin-bottom:2em;
+}
+.searchBar input {
+  display:block;
+  width:50%;
+  margin-top:2em;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 10px;
+  padding-left:0.7em;
+
+}
+
+.tasksList {
+  margin-top:2em;
+ 
+}
+
+.addTask{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2em;
+}
+
+.addTask form {
+  display:flex;
+  
+}
+
+.addTask input {
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 10px;
+  padding-left:0.7em;
+  margin-right:1em;
+
+}
+
+.addTask button {
+  background: url("/images/more.svg") no-repeat;
+  background-size:cover;
+  width:1.7em;
+  height:1.7em;
+  border:none;
+ 
+}
+
+.taskBox {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.checkboxLabel {
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  width:300%;
+  padding-top:1em;
+  color:#415A6B;
+  font-weight: bold;
+ 
+}
+
+
+
+.checkbox:checked + label {
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.checkboxLabel input {
+  cursor: pointer;
+  margin-left:1em;
+  margin-right: 1em;
+ 
+}
+
+.checkboxLabel label {
+ font-size:0.95em;
+}
+
+
+.checkbox input:hover {
+  color: blueviolet;
+
+}
+
+.title h2 {
+  font-size: 1em;
+}
+
+.editTask .pen,.trash {
+  padding-top: 1em;
+}
+
+.pen button {
+  width:1.3em;
+  height:1.3em;
+  border:none;
+  background: url('/images/pencil.svg');
+  background-size: cover;
+  margin-left:1em;
+  /* margin-left:auto; */
+}
+
+.editTask form {
+  display:flex;
+  margin-top:1em;
+}
+
+.editTask form button {
+  background: url("/images/save-file.svg") no-repeat;
+  width:1.5em;
+  height:1.5em;
+  border:none;
+}
+
+.editTask input {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 6px;
+}
+
+
+.trash button {
+  width:1.3em;
+  height:1.3em;
+  border:none;
+  background: url('/images/bin.svg');
+  background-size: cover;
+  margin-left:1em;
+  margin-right:1em;
+
+}
