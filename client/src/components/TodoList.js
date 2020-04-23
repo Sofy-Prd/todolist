@@ -16,7 +16,6 @@ class TodoList extends Component {
       this.setState({
         listOfTasks: responseFromApi.data
       })
-    
     })
   }
 
@@ -34,6 +33,7 @@ class TodoList extends Component {
   render(){
     let tasks = this.state.listOfTasks;
     const query = this.state.query;
+    //filtre les taches à afficher en fonction de la query de la searchbar
     if (query) {
       tasks = tasks.filter(task => task.title.includes(query))
     }
@@ -49,19 +49,17 @@ class TodoList extends Component {
         </div>
        
         <div className="tasksList">
-          { tasks.map( task => {
+          {tasks.map( task => {
             return (
               <div key={task._id}>
                 <TaskBox title={task.title} doneyet={task.doneyet} id={task._id} getTasks={() => this.getAllTasks()}/>
               </div>
-            )})
-          }
+            );
+          })}
         </div>
         <div className="searchBar"> 
           <input type="search" placeholder="Rechercher une tâche ..." value={this.state.query} onChange={this.handleQuery} />
         </div>
-       
-      
       </div>
     )
   }

@@ -14,7 +14,7 @@ class TaskBox extends Component {
         .then( () => {
             this.props.getTasks();
             this.setState({doneyet});
-         })
+        })
         .catch( error => console.log(error) )
     }
 
@@ -23,7 +23,7 @@ class TaskBox extends Component {
         axios.delete(`http://localhost:5000/api/tasks/${this.props.id}`)
         .then( () => {
             this.props.getTasks();
-         })
+        })
         .catch( error => console.log(error) )
     }
 

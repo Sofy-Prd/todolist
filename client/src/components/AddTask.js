@@ -3,9 +3,8 @@ import axios from 'axios';
 
 //ajouter une tache
 class AddTask extends Component {
- state = { title: ""};
-  
-   
+  state = { title: ""};
+     
   handleFormSubmit = (event) => {
     event.preventDefault();
     const title = this.state.title;
