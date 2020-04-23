@@ -4,7 +4,7 @@ import TaskBox from './TaskBox.js'
 import AddTask from './AddTask.js';
 
 
-class TasksList extends Component {
+class TodoList extends Component {
  state = {  listOfTasks: [],
             query:'',
           };
@@ -67,4 +67,4 @@ class TasksList extends Component {
   }
 }
 
-export default TasksList;
+export default TodoList;

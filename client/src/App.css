@@ -10,27 +10,26 @@ body {
   text-align: center;
   justify-content: center;
 }
+
 h1 {
   text-align:center;
   color:#415A6B;
  }
 
 .title img {
-  display:block;
   width:20%;
   margin-bottom:2em;
 }
-.searchBar input {
-  display:block;
-  width:50%;
-  margin-top:2em;
-  margin-left: auto;
-  margin-right:auto;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-radius: 10px;
-  padding-left:0.7em;
 
+@media (min-width:500px){
+  .title img {
+    width:10%;
+  }
+
+  h1 {
+     font-size:3em;
+   }
+  
 }
 
 .tasksList {
@@ -39,7 +38,7 @@ h1 {
 }
 
 .addTask{
-  width:70%;
+  width:60%;
   margin-left: auto;
   margin-right: auto;
   margin-top:2em;
@@ -47,12 +46,12 @@ h1 {
 
 .addTask form {
   display:flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
 .addTask input {
-  margin-left: auto;
-  margin-right:auto;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-radius: 10px;
@@ -68,6 +67,12 @@ h1 {
   height:1.7em;
   border:none;
  
+}
+
+@media (min-width:500px){
+  .addTask input {
+    width:40%;
+  }
 }
 
 .taskBox {
@@ -107,13 +112,24 @@ h1 {
 }
 
 
-.checkbox input:hover {
-  color: blueviolet;
+.checkbox:hover + label {
+  color: #F3705A;
 
 }
 
-.title h2 {
-  font-size: 1em;
+@media (min-width:500px){
+  .taskBox {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    
+  }
+  .checkboxLabel {
+    width:50%;
+  }
+  .label {
+    font-size:1.1em;
+  }
 }
 
 .editTask .pen,.trash {
@@ -148,6 +164,12 @@ h1 {
   border-radius: 6px;
 }
 
+@media(min-width:500px){
+  .taskEdit {
+    margin-left:auto;
+  }
+}
+
 
 .trash button {
   width:1.3em;
@@ -159,3 +181,26 @@ h1 {
   margin-right:1em;
 
 }
+
+
+.searchBar input {
+  display:block;
+  width:50%;
+  margin-top:2em;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 10px;
+  padding-left:0.7em;
+
+}
+
+@media (min-width:500px){
+  .searchBar input {
+    width:25%;
+  }
+}
+
+
+
